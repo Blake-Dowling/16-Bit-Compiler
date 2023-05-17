@@ -22,9 +22,14 @@
 Drawing to Screen:
 <img width="501" alt="Screenshot 2023-05-16 at 8 12 20 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/77509f43-70df-4c15-a441-2092315a8b17">
 
+CPU:
 <img width="892" alt="Screenshot 2023-05-16 at 8 05 09 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/6094723a-6742-4edc-8590-016c502d1793">
+
+Memory:
 <img width="739" alt="Screenshot 2023-05-16 at 8 08 06 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/dacc33cb-b609-4311-a920-b483008d9da8">
 <img width="670" alt="Screenshot 2023-05-16 at 8 08 38 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/2ac154fe-9c62-4506-8ea9-4803a80f265c">
+
+Compiler Machine Code Output:
 <img width="810" alt="Screenshot 2023-05-16 at 8 05 39 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/f0733fad-8c8c-4c3a-b9f8-d6495863b6ec">
 
 <img width="481" alt="Screenshot 2023-05-16 at 8 11 53 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/d3550eaa-afc1-46e6-bdcb-5a4864c10175">
