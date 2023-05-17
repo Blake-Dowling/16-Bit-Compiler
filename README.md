@@ -1,6 +1,6 @@
 # 16BitOS
 
-## My abstraction of a 16-bit operating system from NAND gates.
+## 16-bit Compiler abstracted from NAND gates.
 
 ## This project is composed of abstractions:
 
