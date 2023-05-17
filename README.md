@@ -19,4 +19,8 @@
 * Abstraction 7: Operating System, Virtual Machine, Classes, Nested Function Calls, Arithmetic, Program Control
 
 ## Documentation
-[Abstraction1.pdf](https://github.com/Blake-Dowling/16BitOS/files/11493802/Abstraction1.pdf)
+
+
+
+Abstraction 7:
+<img width="832" alt="Screenshot 2023-05-16 at 8 02 31 PM" src="https://github.com/Blake-Dowling/16BitOS/assets/121590227/5a8b6f5b-adfd-4118-b6e3-37958299d007">
