@@ -1,0 +1,113 @@
+/* Author: Blake Dowling
+ * Project: Square
+ */
+class Square{
+field int x, y, size, direction;
+/*
+ * Description: Instantiates Square object with given arguments.
+ * Precondition: Square object declared.
+ * Postcondition: Square object is returned with arguments as its local variable values.
+ */
+constructor Square new(int, aX, int aY, int aSize){
+let x = aX;
+let y = aY;
+let size = aSize;
+return this;
+}
+/*
+ * Description: Removes Square object from memory.
+ * Precondition: Square object declared.
+ * Postcondition: Square object is deAllocated from memory.
+ */
+method void dispose(){
+do Memory.deAlloc(this);
+return;
+}
+/*
+ * Description: Clears screen and draws square of size "size" at x and y locations on screen.
+ * Precondition: Square object declared, x, y, and size variables are initialized.
+ * Postcondition: Square object is drawn at x, y on screen.
+ */
+method void draw(){
+do this.erase();
+do Screen.drawRectangle(x, y, x + size, y+ size);
+return;
+}
+/*
+ * Description: Clears screen.
+ * Precondition: Square object declared.
+ * Postcondition: Screen is cleared.
+ */
+method void erase(){
+do Screen.clearScreen();
+return;
+}
+/*
+ * Description: Increases size of Square object by 2 pixels.
+ * Precondition: Square object declared, not out of bounds of screen.
+ * Postcondition: Size of Square is increased by 2 pixels.
+ */
+method void incSize(){
+if(size + y < 254){
+if(size + x < 510){
+let size = size + 2;
+}
+}
+return;
+}
+/*
+ * Description: Decreases size of Square object by 2 pixels.
+ * Precondition: Square object declared, size is greater than 2.
+ * Postcondition: Size of Square is decreased by 2 pixels.
+ */
+method void decSize(){
+if(size > 2){
+let size = size - 2;
+}
+return;
+}
+/*
+ * Description: Moves Square object up by 2 pixels.
+ * Precondition: Square object declared, y is greater than 2.
+ * Postcondition: Y location of Square is decreased by 2 pixels.
+ */
+method void moveUp(){
+if(y > 2){
+let y = y - 2;
+}
+return;
+}
+/*
+ * Description: Moves Square object down by 2 pixels.
+ * Precondition: Square object declared, y + size is less than 254.
+ * Postcondition: Y location of Square is increased by 2 pixels.
+ */
+method void moveDown(){
+if(y + size < 254){
+let y = y + 2;
+}
+return;
+}
+/*
+ * Description: Moves Square object left by 2 pixels.
+ * Precondition: Square object declared, x is greater than 2.
+ * Postcondition: X location of Square is decreased by 2 pixels.
+ */
+method void moveLeft(){
+if(x > 2){
+let x = x - 2;
+}
+return;
+}
+/*
+ * Description: Moves Square object right by 2 pixels.
+ * Precondition: Square object declared, x + size is less than 510.
+ * Postcondition: X location of Square is increased by 2 pixels.
+ */
+method void moveRight(){
+if(x + size < 510){
+let x = x + 2;
+}
+return;
+}
+}

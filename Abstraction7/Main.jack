@@ -1,0 +1,21 @@
+/* Author: Blake Dowling
+ * Project: Square Game
+ * Algorithm: 1. Instantiate SquareGame object, which will instantiate Square object.
+ * 2. squareGame. run() method will loop unconditionally, responding to value of Keyboard.keyPressed().
+ * 3. Square object continuously will move in direction indicated by direction variable, until reaching edge of screen.
+ * 4. squareGame object will be deAllocated when user presses 'q', ending program.
+ */
+class Main{
+/*
+ * Description: Instantiates SquareGame object and invokes its run() and dispose() methods.
+ * Precondition: Sys.init()
+ * Postcondition: SquareGame object is created, and its run() and dispose() methods are invoked.
+ */
+function void main(){
+var SquareGame squareGame;
+        let squareGame = SquareGame.new();
+        do squareGame.run();
+        do squareGame.dispose();
+        return;
+}
+}

@@ -1,0 +1,103 @@
+/* Author: Blake Dowling
+ * Project: Square Game
+ */
+class SquareGame{
+field Square square;
+field int direction;
+/*
+ * Description: Instantiates SquareGame object.
+ * Precondition: SquareGame object declared.
+ * Postcondition: SquareGame object is returned with instantiated Square object.
+ */
+constructor SquareGame new(){
+square = Square.new(0, 0, 30, 0);
+return this;
+}
+/*
+ * Description: Increases size of Square object by 2 pixels.
+ * Precondition: Square object declared, not out of bounds of screen.
+ * Postcondition: Size of Square is increased by 2 pixels.
+ */
+method void incSize(){
+square.incSize();
+return;
+}
+/*
+ * Description: Decreases size of Square object by 2 pixels.
+ * Precondition: Square object declared, size is greater than 2.
+ * Postcondition: Size of Square is decreased by 2 pixels.
+ */
+method void decSize(){
+square.decSize();
+return;
+}
+/*
+ * Description: Loops unconditionally in order to draw square moving across screen. Value of Keyboard.keyPressed()
+ * controls Square object's variables or ends program.
+ * Precondition: SquareGame object instantiated.
+ * Postcondition: Square moves across screen, with its direction controlled by user's keystrokes.
+ * SquareGame object will be deAllocated when user presses 'q', ending program.
+ */
+method void run(){
+var char key;
+while(true){
+square.draw();
+while(key = 0){
+let key = Keyboard.keyPressed();
+do this.moveSquare();
+}
+if(key = 'q'){
+this.dispose();
+}
+if(key = 'z'){
+square.decSize();
+}
+if(key = 'x'){
+square.incSize();
+}
+if(key = '131'){
+let direction = 1;
+}
+if(key = '133'){
+let direction = 2;
+}
+if(key = '130'){
+let direction = 3;
+}
+if(key = '132'){
+let direction = 4;
+}
+}
+return;
+}
+/*
+ * Description: Removes SquareGame object from memory.
+ * Precondition: SquareGame object declared.
+ * Postcondition: SquareGame object is deAllocated from memory.
+ */
+method void dispose(){
+do Memory.deAlloc(this);
+return;
+}
+/*
+ * Description: Invokes Square object's directional move methods according to direction variable.
+ * Precondition: SquareGame object declared.
+ * Postcondition: Square object is moved in corresponding direction, followed by a 5ms pause.
+ */
+method void moveSquare(){
+if(direction = 1){
+do square.moveUp();
+}
+if(direction = 2){
+do square.moveDown();
+}
+if(direction = 3){
+do square.moveLeft();
+}
+if(direction = 4){
+do square.moveRight();
+}
+do Sys.wait(5);
+return;
+}
+}
